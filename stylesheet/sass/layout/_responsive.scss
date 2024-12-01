@@ -1,0 +1,18 @@
+@media screen and (max-width:1200px) {
+    @keyframes off-anim {  
+        0%{
+           left: 5%; 
+           opacity: 0;
+        }
+        50%{
+            left: 25%;
+            opacity: 1;
+            transform: rotate(1turn);
+        }
+        100%{
+            left: 50%;
+            opacity: 0;
+            transform: rotate(2turn); 
+        }
+    }
+}

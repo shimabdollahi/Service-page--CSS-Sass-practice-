@@ -1,0 +1,22 @@
+.cta{
+    background-color: $primary-color;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    border-radius: $primary-border-radius;
+    padding: 30px;
+    &__btn{
+        background-color: $white-color;
+        border-color: $grey-color;
+        font-size: $medium-font-size;
+        padding: 7px 20px;
+        i{
+            font-size: $small-font-size;
+        }
+    }
+    &__img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+}

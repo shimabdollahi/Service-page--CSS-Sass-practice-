@@ -1,0 +1,60 @@
+.form{
+    border-radius: $primary-border-radius;
+    background-color: $transparent-primary-color;
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+    button{
+        display: block;
+        margin: auto;
+    }
+}
+%input-group{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $light-grey-color;
+    border-radius:$primary-border-radius ;
+    outline: none;
+}
+%input-group-focus{
+    border: 1px solid $blue-color;
+}
+.input-group{
+    margin-bottom: 10px;
+    input {
+        @extend %input-group;
+        box-sizing: border-box;
+        &[type="radio"]{
+            width: auto;
+        }
+        &:focus{
+            @extend %input-group-focus;
+        }
+    }
+    select{
+        @extend %input-group;
+        &:focus{
+            @extend %input-group-focus;
+        }
+    }
+    &__select-file-label{
+        color: $white-color;
+        background-color: $primary-color;
+        border: 1px solid $white-color;
+        border-radius: 5px;
+        padding: 5px 10px;
+        transition: all 0.5s ease-in-out;
+        margin-bottom: 30px;
+        display: inline-block;
+        :hover{
+            color: $primary-color;
+            background-color: $white-color;
+            border-color: $primary-color;
+        }
+    } 
+    &__select-file-input{
+        display: none;
+    }
+} 
+

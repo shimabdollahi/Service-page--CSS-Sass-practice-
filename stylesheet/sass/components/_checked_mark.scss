@@ -1,0 +1,9 @@
+.checked-mark{
+    &::before{
+       content: "\f00c";
+       font-family: $icon-font-family;
+       font-weight: $icon-font-weight;
+       margin-left: 5px;
+    }
+  }
+  

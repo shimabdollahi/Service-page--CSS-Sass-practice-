@@ -1,0 +1,45 @@
+.menu{
+    list-style: none;
+    text-align: center;
+    font-size: $large-font-size;
+    margin: 20px;
+    li{
+        display: inline-block;
+        padding: 10px;
+        border-bottom:3px solid transparent; 
+    }
+    > li:hover{ 
+        border-color: $primary-color;
+    
+    }
+    &__sub{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:46px;
+        right: 0px;
+        background-color: $white-color;
+        height: 200px;
+        overflow-y: auto; /* *******************NEW POINT******************** */
+        opacity: 0; /* *******************NEW POINT******************** */
+        visibility: hidden; /* *******************NEW POINT******************** */
+        transition: opacity 1s ease-out , visibility 0s 1s; /* *******************NEW POINT******************** */
+        li:hover{
+            background-color: $secondary-color;
+            color: $white-color;
+        }
+    }
+} 
+.has-submenu{
+    position: relative;
+    &:hover{
+        .menu__sub{
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.5s ease-out; 
+        }
+    }
+}
+
+
+

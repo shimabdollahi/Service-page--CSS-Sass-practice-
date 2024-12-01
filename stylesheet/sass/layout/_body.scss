@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box; /* *******************PREVIOUS POINT******************** */
+}
+img{
+    width: auto;
+}
+section[class*=-section]{ /* *******************PREVIOUS POINT******************** */
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+    color: $grey-color;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    @include media (lg){
+        max-width: 870px;
+    }
+    @include media (md){
+        max-width: 670px;
+    }
+    @include media (sm){
+        max-width: 470px;
+    }
+    @include media (xs){
+        max-width: calc(100% - 20px);
+    }
+}

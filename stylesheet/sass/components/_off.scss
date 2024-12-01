@@ -1,0 +1,53 @@
+.off{
+    color: $white-color;
+    background-color: $green-color;
+    padding: 10px;
+    position: absolute  ;
+    top: -5px;
+    border-radius: 50%;
+
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+    animation-name: off-anim;  
+    animation-iteration-count: infinite;  
+    animation-timing-function: ease-in-out;  
+    animation-duration: 8s;  
+
+}
+@keyframes off-anim {  
+    // @include media (lg){
+    //     0%{
+    //         left: 5%; 
+    //         opacity: 0;
+    //      }
+    //      50%{
+    //          left: 25%;
+    //          opacity: 1;
+    //          transform: rotate(1turn);
+    //      }
+    //      100%{
+    //          left: 50%;
+    //          opacity: 0;
+    //          transform: rotate(2turn); 
+    //      }
+    // }
+    0%{
+       left: 0; 
+       opacity: 0;
+    }
+    50%{
+        left: 42.5%;
+        opacity: 1;
+        transform: rotate(1turn);
+    }
+    100%{
+        left: 85%;
+        opacity: 0;
+        transform: rotate(2turn); 
+    }
+
+    
+}
